@@ -78,13 +78,13 @@ describe('Round', () => {
     expect(round.takeTurn('red')).to.equal('incorrect!');
 
   });
-  it.skip('should give feedback on correctness of user\'s guess', () => {
-
-    round.takeTurn('What stairs? You live in a one-story house');
-
-    expect(round.takeTurn(turn.giveFeedback)).to.equal('correct!');
-
-  });
+  // it.skip('should give feedback on correctness of user\'s guess', () => {
+  //
+  //   round.takeTurn('What stairs? You live in a one-story house');
+  //
+  //   expect(round.takeTurn(turn.giveFeedback)).to.equal('correct!');
+  //
+  // });
 
   it('should store id of incorrect guesses', () => {
     round.takeTurn('red');

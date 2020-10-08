@@ -12,15 +12,16 @@ class Game {
   }
 
   start() {
-    const cardSet = prototypeQuestions.map(question => {
-      let card = new Card(question.id, question.question, question.answers, question.correctAnswer);
+    const cardSet = prototypeQuestions.map(cardInfo => {
+      let card = new Card(cardInfo.id, cardInfo.question, cardInfo.answers, cardInfo.correctAnswer);
       return card;
     })
     const deck = new Deck(cardSet);
     this.currentRound = new Round(deck);
     const round = this.currentRound;
-    this.printMessage(deck, round);
     this.printQuestion(round);
+    this.printMessage(deck, round);
+    // this.printQuestion(round);
   }
 
   printMessage(deck, round) {
@@ -31,6 +32,6 @@ class Game {
   printQuestion(round) {
       util.main(round);
   }
-}
+};
 
 module.exports = Game;

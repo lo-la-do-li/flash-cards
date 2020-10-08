@@ -22,7 +22,7 @@ describe('Game', () => {
 //     expect(game.currentRound).to.equal(null);
 // });
 
-  it.skip('should keep track of the current round', () => {
+  it('should keep track of the current round', () => {
     let game = new Game();
     game.start();
     expect(game.currentRound).to.be.an.instanceOf(Round);

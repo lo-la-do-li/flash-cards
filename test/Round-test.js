@@ -10,7 +10,7 @@ describe('Round', () => {
   let card1;
   let card2;
   let card3;
-  let turn;
+  // let turn;
   let deck;
   let round;
 
@@ -82,7 +82,7 @@ describe('Round', () => {
 
     round.takeTurn('What stairs? You live in a one-story house');
 
-    expect(round.takeTurn(turn.giveFeedback)).to.not.equal('incorrect!');
+    expect(round.takeTurn(turn.giveFeedback)).to.equal('correct!');
 
   });
 

@@ -17,15 +17,14 @@ describe('Game', () => {
    expect(game).to.be.an.instanceOf(Game);
  });
 
-//   it('should set current round to null by default', () => {
-//     let game = new Game();
-//     expect(game.currentRound).to.equal(null);
-// });
+  it('should set current round to null by default', () => {
+    let game = new Game();
+    expect(game.currentRound).to.equal(null);
+});
 
-  it('should keep track of the current round', () => {
+  it('should keep track of the round in the game', () => {
     let game = new Game();
     game.start();
     expect(game.currentRound).to.be.an.instanceOf(Round);
   });
-
 });

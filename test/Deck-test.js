@@ -28,13 +28,14 @@ describe('Deck', () => {
     expect(deck).to.be.an.instanceof(Deck);
   });
 
-  it('should initialize with an array of Cards', function() {
+  it('should initialize with an array of Cards', () => {
     expect(deck.cardSet).to.deep.equal([card1, card2, card3]);
-  })
-  it('should know how many Cards are in the Deck', function() {
+  });
 
-  deck.countCards();
+  it('should know how many Cards are in the Deck', () => {
 
-  expect(deck.countCards()).to.deep.equal(3);
-  })
-})
+    deck.countCards();
+
+    expect(deck.countCards()).to.deep.equal(3);
+  });
+});

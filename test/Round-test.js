@@ -10,7 +10,7 @@ describe('Round', () => {
   let card1;
   let card2;
   let card3;
-  // let turn;
+  let turn;
   let deck;
   let round;
 
@@ -75,16 +75,9 @@ describe('Round', () => {
 
     round.takeTurn('red');
 
-    expect(round.takeTurn('red')).to.equal('incorrect!');
+    expect(round.takeTurn()).to.equal('incorrect!');
 
   });
-  // it.skip('should give feedback on correctness of user\'s guess', () => {
-  //
-  //   round.takeTurn('What stairs? You live in a one-story house');
-  //
-  //   expect(round.takeTurn(turn.giveFeedback)).to.equal('correct!');
-  //
-  // });
 
   it('should store id of incorrect guesses', () => {
     round.takeTurn('red');

@@ -13,33 +13,33 @@ describe('Turn', () => {
     turn = new Turn('red', card);
   });
 
-  it('should be a function', function() {
+  it('should be a function', () => {
     expect(Turn).to.be.a('function');
   });
 
-  it('should be an instance of Turn', function() {
+  it('should be an instance of Turn', () => {
     expect(turn).to.be.an.instanceof(Turn);
   });
 
-  it('should store a user\'s guess', function() {
+  it('should store a user\'s guess', () => {
     expect(turn.guess).to.be.a('string');
     expect(turn.guess).to.equal('red');
   });
 
-  it('should store the current card in play', function() {
+  it('should store the current card in play', () => {
     expect(turn.card).to.be.an.instanceof(Card);
   });
 
-  it('should return the user\'s guess', function() {
+  it('should return the user\'s guess', () => {
     expect(turn.returnGuess()).to.equal('red');
   });
 
-  it('should return the card in play', function() {
+  it('should return the card in play', () => {
     expect(turn.returnCard()).to.be.an.instanceof(Card);
     expect(turn.returnCard().correctAnswer).to.deep.equal(turn.card.correctAnswer);
   });
 
-  it('should evaluate if user\'s guess is correct', function() {
+  it('should evaluate if user\'s guess is correct', () => {
 
     let card1 = new Card(1, 'You live in a one story house made entirely of redwood. What color would the stairs be?', ['wood', 'red', 'What stairs? You live in a one-story house'], 'What stairs? You live in a one-story house');
 
@@ -57,7 +57,7 @@ describe('Turn', () => {
     expect(turn2.evaluateGuess()).to.equal(true);
   });
 
-  it('should give feedback for correct or incorrect answers', function() {
+  it('should give feedback for correct or incorrect answers', () => {
     let card1 = new Card(1, 'You live in a one story house made entirely of redwood. What color would the stairs be?', ['wood', 'red', 'What stairs? You live in a one-story house'], 'What stairs? You live in a one-story house');
 
     let turn1 = new Turn('red', card1);

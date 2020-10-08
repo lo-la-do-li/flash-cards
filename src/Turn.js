@@ -2,29 +2,28 @@ class Turn {
   constructor(guess, card) {
     this.guess = guess;
     this.card = card;
+    this.turns = 0;
   };
+
   returnGuess() {
-    console.log(this.card)
     return this.guess;
   };
+
   returnCard() {
     return this.card;
   };
+
   evaluateGuess() {
-    if (this.guess === this.card.correctAnswer) {
-      return true;
-    }
-    else if (this.guess !== this.card.correctAnswer) {
-      return false;
-    };
+    return this.card.correctAnswer === this.guess ? true : false;
   };
+
   giveFeedback() {
-    if (this.evaluateGuess() === true) {
+    if (this.evaluateGuess()) {
       return 'correct!'
     }
-    else if (this.evaluateGuess() === false) {
+    else if (!this.evaluateGuess()) {
       return 'incorrect!'
-    };
+    }
   };
 };
 

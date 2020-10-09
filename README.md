@@ -9,6 +9,11 @@ Users can access this flashcard exercise through the terminal on their local dev
 This project was completed using Test-Driven Development(TDD) via Chai assertion library and Mocha testing framework. <br>
 JavaScript code was implemented following Object-Oriented Programming(OOP) paradigm.
 
+## Flashcards Demo!
+
+![flashcards demo gif](https://media.giphy.com/media/I4X4n3016dIJzYJ6lL/giphy.gif)
+
+
 ## To Play This Game, Follow These Setup Instructions:
 
 1. Clone down this repository by clicking the green `Code` button at the top of the page. Choose 'SSH' key. Copy the link provided to your clipboard.
@@ -25,10 +30,7 @@ JavaScript code was implemented following Object-Oriented Programming(OOP) parad
 
 7. EXIT THE GAME: Once your round is complete, hit `control C` to exit to your terminal command line. 
 
-
-## Flashcards Demo!
-
-![flashcards demo gif](https://media.giphy.com/media/I4X4n3016dIJzYJ6lL/giphy.gif)
+**Study Up and Enjoy!!**
 
 
 

@@ -1,79 +1,35 @@
-# FlashCards Starter Kit
+# FlashCards 
 
-## Fork This Repo
+A flashcard exercise generated with JavaScript, played through the terminal; <br>
+by [Lola Dolinsky](https://github.com/lo-la-do-li)
 
-On the top right corner of this page, click the **Fork** button.
+## Abstract
+Users can access this flashcard exercise through the terminal on their local device. The card set includes 30 flashcards, each presenting a question and three possible answers. User chooses number 1, 2, or 3 to submit their guess (1 or 2 if true/false question). The game communicates whether an answer is correct or incorrect. At the end of play (once 30 cards are up), the user is provided with a game-over message along with their percentage of correct answers.
 
-## Setup
+This project was completed using Test-Driven Development(TDD) via Chai assertion library and Mocha testing framework. <br>
+JavaScript code was implemented following Object-Oriented Programming(OOP) paradigm.
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+## To Play This Game, Follow These Setup Instructions:
 
-```bash
-git clone [remote-address] [what you want to name the repo]
-```
+1. Clone down this repository by clicking the green `Code` button at the top of the page. Choose 'SSH' key. Copy the link provided to your clipboard.
 
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
+2. Open up your terminal to where you'd like the repository to be stored on your local device. Type into your terminal `git clone [and paste copied link address here]`.
 
-```bash
-npm install
-```
-
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
-
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
-
-```bash
-Node server running on port 3000
-```
-
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
+3. Change into the flashcard-starter directory using `cd flash-cards`. 
+4. In your terminal, run the command `npm install`.
 
 
-## Where to Add Your Code
+5. To verify that it is setup correctly, run `npm test` in your terminal. You should have 33 passing tests in green that show up.
 
-### JavaScript
+6. START THE GAME: Run the command `node index.js` in your terminal. You will receive a welcome message and your first question prompt.
 
-**Create all of your feature code files in the `src` directory.**
+7. EXIT THE GAME: Once your round is complete, hit `control C` to exit to your terminal command line. 
 
-We will be using the `module.exports` and `require` syntax to share code across files.
 
-## How to View Your Code in Action
+## Flashcards Demo!
 
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
+![flashcards demo gif](http://www.giphy.com/gifs/3ZbY837VFTDhudjggT)
 
-```bash
-node index.js
-```
 
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
-
----
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
-
----
-
-## Linting Your Code
-
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit - the linter is still running successfully.
-
-Your linter will look at the JavaScript files you have within the `src` directory and the `test` directory. 
 
 ---

@@ -30,6 +30,8 @@ JavaScript code was implemented following Object-Oriented Programming(OOP) parad
 
 ![flashcards demo gif](https://media.giphy.com/media/WvdSgfwZgIKlhYz3op/giphy.gif)
 
+![flashcards demo gif](https://media.giphy.com/media/I4X4n3016dIJzYJ6lL/giphy.gif)
+
 
 
 ---

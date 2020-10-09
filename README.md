@@ -28,7 +28,7 @@ JavaScript code was implemented following Object-Oriented Programming(OOP) parad
 
 ## Flashcards Demo!
 
-![flashcards demo gif](https://media.giphy.com/media/MLwzm9ltlxwobbrMwX/giphy.gif)
+![flashcards demo gif](https://media.giphy.com/media/04pg93aJzbSmgFcHN0/giphy.gif)
 
 
 
